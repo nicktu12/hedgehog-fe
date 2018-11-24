@@ -15,7 +15,8 @@ button.addEventListener("click", function(event) {
 
 function getImages(keyword) {
   button.value = "Looking for photos..."
-  fetch(`https://hedgehog-scraper.herokuapp.com/api/v1/hedgie_images/${keyword}`)
+
+  fetch(`http://localhost:3000/hedgie/${keyword}`)
     .then(response => response.json())
     .then(images => updateImages(images))
     .then(() => button.value = "Get Hedgie Photos")
@@ -28,8 +29,9 @@ function clearInput() {
 }
 
 function updateImages(images) {
-  hedgie1.src = images["hedgieImages"][0];
-  hedgie2.src = images["hedgieImages"][1];
-  hedgie3.src = images["hedgieImages"][2];
-  hedgie4.src = images["hedgieImages"][3];
+  console.log(images);
+  hedgie1.src = images[0];
+  hedgie2.src = images[1];
+  hedgie3.src = images[2];
+  hedgie4.src = images[3];
 }
