@@ -9,3 +9,4 @@ This is a starter kit for the [Hedgehog Web Scraper Workshop](https://github.com
 - Type `cd hedgehog-fe`
 - Type `open index.html`
 - Your browser will open to a page that looks something like this:
+![image](https://user-images.githubusercontent.com/25447342/48985561-fb4ab180-f0c5-11e8-8c14-f80211f2b9cb.png)
