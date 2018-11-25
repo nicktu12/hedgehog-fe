@@ -1,4 +1,4 @@
-# Hedghegog Front-End 
+# Hedgehog Front-End 
 
 This is a starter kit for the [Hedgehog Web Scraper Workshop](https://github.com/ameseee/web-scraper-workshop).
 
