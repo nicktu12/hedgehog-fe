@@ -16,7 +16,7 @@ button.addEventListener("click", function(event) {
 function getImages(keyword) {
   button.value = "Looking for photos..."
 
-  fetch(`https://hedgie-scraper1-ameseee.c9users.io/hedgie/${keyword}`)
+  fetch(`http://localhost:3000/hedgie/${keyword}`)
     .then(response => response.json())
     .then(images => updateImages(images))
     .then(() => button.value = "Get Hedgie Photos")
